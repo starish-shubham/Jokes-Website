@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* background-image: url("images/bg.avif"); */
+    background-image: url("images/bg.jpg");
+    background-image: url("images/bg\ 1.png");
+    /* background-image: url("https://img.freepik.com/free-photo/3d-rendering-emotions_23-2149081949.jpg?w=900&t=st=1699516116~exp=1699516716~hmac=a3937e634c289bcccc128f3213bd8558d36d62a6cdd4813fba980d41629a71d2"); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-size: 16px;
+}
+
+.page-header {
+    /* From https://css.glass */
+    background: rgba(220, 217, 217, 0.369);
+    /* background: rgba(255, 255, 0, 0.328); */
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 1);
+    padding: 10px 20px 10px 20px;
+    /* text-align: center; */
+    margin-top: 10px;
+    width: calc(90%);
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    color: #c13636;
+}
+.box{
+    background: rgba(220, 217, 217, 0.511);
+    /* background: rgba(255, 255, 0, 0.328); */
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 1);
+    padding: 20px 20px 10px 20px;
+    position: absolute;
+    width: 300px; /* Adjust the width as needed */
+    min-height: 200px; /* Adjust the height as needed */
+    height: auto;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.joke-text {
+    /* border: 1px solid red; */
+    font-weight: bold;
+    font-size: 1.4rem;
+    height: 100px;
+    height: auto;
+    padding-bottom: 1rem;
+    width: 100%;
+
+}
+
+.share-button{
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    margin-top: 20px;
+}
+.share{
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+.share:hover{
+    scale: 1.1;
+}
+
+.next{
+    background-color: #AAF063;
+    padding:  5px calc(30%);
+    cursor: pointer;
+    /* border: 2px solid #AAF063; */
+    border: none;
+    border-radius: 3px;
+    color:rgb(70, 68, 68);
+    font-size: 1.2rem;
+    font-weight: bold;
+    /* background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/1400/4d63ac64120315.5ac773360206a.png"); */
+}
+
+
+
+@media (max-width: 768px){
+    .page-header{
+        width: 80%;
+    }
+}
