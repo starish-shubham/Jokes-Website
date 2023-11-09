@@ -99,4 +99,7 @@ body {
     .page-header{
         width: 80%;
     }
+    .page-header{
+        font-size: 0.8rem;
+    }
 }
